@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background-color: black;
+  color: white;
+  background-image: url("https://cdn.glitch.global/e55c9d40-01e2-43b8-92ef-5049f5535617/SpaceBG.png?v=1699835757714");
+}
+
+.skyler {
+    -webkit-animation:spin 150s linear infinite;
+    -moz-animation:spin 150s linear infinite;
+    animation:spin 150s linear infinite;
+  filter: brightness(85%);
+  transition: filter 0.2s;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.skyler:hover {
+  filter: brightness(115%);
+}
